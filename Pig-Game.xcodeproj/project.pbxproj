@@ -11,6 +11,8 @@
 		AD0ED7CC29140BBD0099AF4F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0ED7CB29140BBD0099AF4F /* ContentView.swift */; };
 		AD0ED7CE29140BBF0099AF4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD0ED7CD29140BBF0099AF4F /* Assets.xcassets */; };
 		AD0ED7D129140BBF0099AF4F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD0ED7D029140BBF0099AF4F /* Preview Assets.xcassets */; };
+		AD0ED7D8291410940099AF4F /* Rules.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0ED7D7291410940099AF4F /* Rules.swift */; };
+		AD0ED7DA2914132C0099AF4F /* PIG.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0ED7D92914132C0099AF4F /* PIG.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		AD0ED7CB29140BBD0099AF4F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AD0ED7CD29140BBF0099AF4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD0ED7D029140BBF0099AF4F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AD0ED7D7291410940099AF4F /* Rules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rules.swift; sourceTree = "<group>"; };
+		AD0ED7D92914132C0099AF4F /* PIG.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PIG.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,8 @@
 			children = (
 				AD0ED7C929140BBD0099AF4F /* Pig_GameApp.swift */,
 				AD0ED7CB29140BBD0099AF4F /* ContentView.swift */,
+				AD0ED7D7291410940099AF4F /* Rules.swift */,
+				AD0ED7D92914132C0099AF4F /* PIG.swift */,
 				AD0ED7CD29140BBF0099AF4F /* Assets.xcassets */,
 				AD0ED7CF29140BBF0099AF4F /* Preview Content */,
 			);
@@ -137,8 +143,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD0ED7DA2914132C0099AF4F /* PIG.swift in Sources */,
 				AD0ED7CC29140BBD0099AF4F /* ContentView.swift in Sources */,
 				AD0ED7CA29140BBD0099AF4F /* Pig_GameApp.swift in Sources */,
+				AD0ED7D8291410940099AF4F /* Rules.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
