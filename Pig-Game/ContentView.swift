@@ -10,15 +10,19 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         NavigationView{
-            VStack {
-                Text("Welcome To :") .font(.system(size:30)).fontWeight(.heavy)
-                Text("PIG THE GAME").font(.system(size:35)).fontWeight(.heavy)
-                Image("PIG")
-                Spacer()
-                VStack{
-                    NavigationLink("Learn The Rules", destination: Rules()).font(.system(size:25)).fontWeight(.heavy)
-                    Text("OR").font(.system(size:25)).fontWeight(.heavy)
-                    NavigationLink("Play PIG" , destination: PIG()).font(.system(size:25)).fontWeight(.heavy)
+            ZStack{
+                Color.brown.opacity(0.6).ignoresSafeArea()
+                VStack {
+                    Text("Welcome To :") .font(.system(size:30)).fontWeight(.heavy)
+                    Text("PIG THE GAME").font(.system(size:35)).fontWeight(.heavy)
+                    Image("Pig 1").resizable().frame(width: 150, height: 150)
+                    Spacer()
+                    VStack{
+                        NavigationLink("Learn The Rules", destination: Rules()).font(.system(size:25)).fontWeight(.heavy).padding()
+                        Text("OR").font(.system(size:25)).fontWeight(.heavy).padding()
+                        NavigationLink("Play PIG" , destination: PIG()).font(.system(size:25)).fontWeight(.heavy).padding()
+                    }
+                    Spacer()
                 }
             }
         }
