@@ -19,7 +19,7 @@ struct Rules: View {
                     Text("3. You can choose to 'Hold' and add the points to the total ").padding()
                     Text("4. Or you can keep rolling and accumulating points.").padding()
                     Text("5. If you roll a 'Pig' all points accumulated that turn are lost and it is the next persons turn").padding()
-                    Text("6. Whoever is able to geet the total points to 100+ on their turn is the winner").padding()
+                    Text("6. Whoever is able to get the total points to 100+ on their turn is the winner").padding()
                 }
                
                 .padding()
