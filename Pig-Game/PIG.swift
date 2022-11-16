@@ -12,6 +12,7 @@ struct PIG: View {
     @State private var rotation = 0.0
     @State private var turnScore = 0
     @State private var totalScore = 0
+    @State private var gameOver = false
     var body: some View {
         ZStack{
             Color.brown.opacity(0.6).ignoresSafeArea()
@@ -43,13 +44,30 @@ struct PIG: View {
                         withAnimation(.easeInOut(duration: 1)){
                             rotation += 360
                         }
+                        if totalScore >= 100{
+                            gameOver = true
+                        }
                     }
                     .buttonStyle(CustomButtonStyle())
                 }
                 CustomText(text: "Total Score : \(totalScore)")
+                Button("Reset"){
+                    endTurn()
+                    totalScore = 0
+                }.font(Font.custom("Marker Felt" , size: 34)).padding()
                 Spacer()
             }
         }
+        .alert (isPresented: $gameOver, content: {
+            Alert(title: Text("You won the game!"), dismissButton:
+                    .destructive(Text("Play again"), action: {
+                        withAnimation (Animation.default) {
+                            totalScore = 0
+                            gameOver = false
+                        }
+                    }))
+        })
+        
     }
     func endTurn(){
         turnScore = 0
